@@ -10,7 +10,7 @@ export const groupsApiSlice = createApi({
       query: () => "group",
     }),
     getGroupPeers: builder.query({
-      query: ({ id }) => `group/${id}/peer`,
+      query: ({ id }) => `group/${id}`,
     }),
     getGroupPeersEvents: builder.query({
       query: ({ id, peer }) => `group/${id}/peer/${peer}/event`,
